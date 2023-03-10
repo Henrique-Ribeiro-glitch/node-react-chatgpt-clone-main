@@ -14,16 +14,16 @@ Um clone fullstack do chatgpt utilizando uma integração com o algoritmo do Ope
 
 # O que foi usado nos projetos
 
-### Backend
   - Node
-  - Express
   - Javascript
-  - Cors
-
-### Frontend
   - React
   - Javascript
-
+  - OpenAI
+  - Express
+  - Cors
+  - Dotenv
+  - Nodemon
+  
 ### Como eu faço para executar o serviço do backend?
 
 ```sh
@@ -32,7 +32,10 @@ $ npm install
 $ npm start
 ```
 
-Feito isso o serviço de backend estará funcionando na porta :5000. 
+Feito isso o serviço de backend estará funcionando na porta :5000. Crie também uma file ".env" no folder "server" com o seguinte conteudo:
+PORT=5000
+OPEN_AI_KEY=""
+Então va em https://platform.openai.com/account/api-keys e gere uma key e ponha dentro das aspas vazias. Voce precizara criar uma conta antes.
 
 ### Como eu faço para executar o serviço do frontend?
 
